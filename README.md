@@ -23,4 +23,4 @@ Understanding health patterns, including environmental and astronomical influenc
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/health-tracker-app.git
+   git clone https://github.com/mzahiddev404/health-tracker-app.git
