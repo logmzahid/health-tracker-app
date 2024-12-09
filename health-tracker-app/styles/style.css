@@ -1,0 +1,115 @@
+/* === Global Styles === */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f3f6f9; /* Light gray background */
+    color: #2c3e50; /* Dark gray-blue for text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* === Navigation Panel === */
+nav {
+    background-color: #4a90e2; /* Calming blue */
+    color: #ffffff; /* White text */
+    padding: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container a {
+    color: #ffffff; /* White links */
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.nav-container a:hover {
+    color: #f3f6f9; /* Light gray on hover */
+}
+
+#search-box {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+/* === Header === */
+header h1 {
+    color: #ffffff; /* White title text */
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #4a90e2; /* Blue background */
+}
+
+/* === Section Styles === */
+section {
+    background: #ffffff;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #34495e; /* Slightly lighter gray */
+}
+
+/* === Form Styles === */
+form label {
+    color: #34495e; /* Match section headers */
+    font-weight: bold;
+}
+
+input, select {
+    background-color: #ffffff;
+    color: #2c3e50;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    padding: 1rem; /* Larger button size */
+    font-size: 1.2rem; /* Increase font size */
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #357ABD;
+    transform: scale(1.02);
+}
+
+/* === Calendar === */
+#calendar-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for the week */
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+.calendar-day {
+    background: #ffffff;
+    color: #2c3e50;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+/* Highlight logged days */
+.calendar-day.logged {
+    background-color: #eaf2f8; /* Light blue background */
+    font-weight: bold; /* Bold text */
+    border: 1px solid #4a90e2; /* Blue border */
+}
