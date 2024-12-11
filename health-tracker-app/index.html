@@ -8,8 +8,7 @@
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        
-        <!-- Navigation Panel -->
+        <!-- Navigation Bar -->
         <nav>
             <div class="nav-container">
                 <a href="#home">Home</a>
@@ -20,26 +19,29 @@
             </div>
         </nav>
 
-        <!-- Header -->
+        <!-- Header Section -->
         <header id="home">
             <h1>Health Tracker App</h1>
         </header>
 
         <main>
-            <!-- Unified Logging Section -->
+            <!-- Logging Form Section -->
             <section id="log-data">
                 <h2>Log Your Health Data</h2>
                 <form id="log-form">
+                    <!-- Symptom Input -->
                     <div class="form-group">
                         <label for="symptom">Symptom:</label>
                         <input type="text" id="symptom" name="symptom" placeholder="e.g., headache, fatigue" required>
                     </div>
 
+                    <!-- Date Input -->
                     <div class="form-group">
                         <label for="date">Date:</label>
                         <input type="date" id="date" name="date" required>
                     </div>
 
+                    <!-- Lunar Phase Dropdown -->
                     <div class="form-group">
                         <label for="lunar-phase">Moon Phase:</label>
                         <select id="lunar-phase" name="lunar-phase" required>
@@ -51,7 +53,12 @@
                             <option value="Waning Gibbous">🌖 Waning Gibbous</option>
                         </select>
                     </div>
+                    <p>
+                        Learn more about lunar phases on the 
+                        <a href="https://science.nasa.gov/moon/" target="_blank">NASA Moon Guide</a>.
+                    </p>
 
+                    <!-- Mood Dropdown -->
                     <div class="form-group">
                         <label for="mood">Mood:</label>
                         <select id="mood" name="mood" required>
@@ -60,18 +67,35 @@
                             <option value="Anxious">😟 Anxious</option>
                             <option value="Stressed">😰 Stressed</option>
                             <option value="Calm">😌 Calm</option>
+                            <option value="Irritated">😡 Irritated</option>
+                            <option value="Optimistic">😃 Optimistic</option>
                         </select>
                     </div>
 
+                    <!-- Energy Level -->
                     <div class="form-group">
                         <label for="energy-level">Energy Level:</label>
-                        <input type="range" id="energy-level" name="energy-level" min="1" max="10" value="5">
+                        <div class="energy-scale">
+                            <span class="emoji">😴</span>
+                            <input type="range" id="energy-level" name="energy-level" min="1" max="10" value="5">
+                            <span class="emoji">💪</span>
+                        </div>
+                        <div class="energy-values">
+                            <span>1</span><span>10</span>
+                        </div>
                         <span id="energy-level-value">5</span>
                     </div>
 
+                    <!-- Notes Input -->
                     <div class="form-group">
                         <label for="notes">Notes:</label>
                         <textarea id="notes" name="notes" rows="3" placeholder="Add additional details..."></textarea>
+                    </div>
+
+                    <!-- Reminder Option -->
+                    <div class="form-group">
+                        <label for="reminder">Set Daily Reminder:</label>
+                        <input type="time" id="reminder-time" name="reminder-time">
                     </div>
 
                     <button type="submit">Log</button>
@@ -81,23 +105,21 @@
             <!-- Calendar Section -->
             <section id="calendar">
                 <h2>Monthly Calendar</h2>
-                <div id="calendar-container">
-                    <!-- Dynamic calendar to populate here -->
-                </div>
+                <div id="calendar-container"></div>
             </section>
 
             <!-- Insights Section -->
             <section id="insights">
                 <h2>Insights</h2>
                 <p>Visualize trends and patterns in your health data. (Feature coming soon!)</p>
+                <button id="share-insights">Share Insights</button>
             </section>
 
             <!-- Profile Section -->
             <section id="profile">
                 <h2>Profile</h2>
                 <div class="social-links">
-                    <a href="https://x.com/home" target="_blank">Follow on X (Twitter)</a>
-                    <!-- Additional links as needed -->
+                    <a href="https://X.com" target="_blank">Follow us on X (formerly Twitter)</a>
                 </div>
             </section>
         </main>
