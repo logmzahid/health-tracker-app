@@ -1,4 +1,4 @@
-# Health Tracker App
+# Health Tracker App (WORK IN PROGRESS)
 
 The **Health Tracker App** is designed to empower individuals to take control of their health by logging symptoms, tracking lunar phases, and visualizing data in an intuitive calendar. Created with care and attention to detail, this app is ideal for those managing chronic conditions or anyone seeking a better understanding of their well-being.
 
