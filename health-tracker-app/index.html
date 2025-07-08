@@ -45,7 +45,9 @@
                     <div class="form-group">
                         <label for="lunar-phase">Moon Phase:</label>
                         <select id="lunar-phase" name="lunar-phase" required>
+                            <option value="" disabled selected>Select an option</option>
                             <option value="New Moon">🌑 New Moon</option>
+                            <option value="Waxing Crescent">🌒 Waxing Crescent</option>
                             <option value="Waxing Crescent">🌒 Waxing Crescent</option>
                             <option value="First Quarter">🌓 First Quarter</option>
                             <option value="Full Moon">🌕 Full Moon</option>
@@ -61,15 +63,16 @@
                     <!-- Mood Dropdown -->
                     <div class="form-group">
                         <label for="mood">Mood:</label>
-                        <select id="mood" name="mood" required>
-                            <option value="Happy">😊 Happy</option>
-                            <option value="Sad">😢 Sad</option>
-                            <option value="Anxious">😟 Anxious</option>
-                            <option value="Stressed">😰 Stressed</option>
-                            <option value="Calm">😌 Calm</option>
-                            <option value="Irritated">😡 Irritated</option>
-                            <option value="Optimistic">😃 Optimistic</option>
-                        </select>
+                            <select id="mood" name="mood" required>
+                                <option value="" disabled selected>Select your mood</option>
+                                <option value="Happy">😊 Happy</option>
+                                <option value="Sad">😢 Sad</option>
+                                <option value="Anxious">😟 Anxious</option>
+                                <option value="Stressed">😰 Stressed</option>
+                                <option value="Calm">😌 Calm</option>
+                                <option value="Irritated">😡 Irritated</option>
+                                <option value="Optimistic">😃 Optimistic</option>
+                            </select>
                     </div>
 
                     <!-- Energy Level -->
@@ -92,9 +95,27 @@
                         <textarea id="notes" name="notes" rows="3" placeholder="Add additional details..."></textarea>
                     </div>
 
+                    <!-- Custom Trackers -->
+                    <div class="form-group">
+                        <label for="custom-tracker">Custom Tracker:</label>
+                        <input type="text" id="custom-tracker" name="custom-tracker" placeholder="e.g., water intake, diet">
+                    </div>
+
+                    <!-- Experiment Section -->
+                    <div class="form-group">
+                        <label for="experiment">Set Experiment:</label>
+                        <input type="text" id="experiment" name="experiment" placeholder="e.g., Test new medication effects">
+                    </div>
+
+                    <!-- Factors -->
+                    <div class="form-group">
+                        <label for="factors">Factors:</label>
+                        <textarea id="factors" name="factors" rows="3" placeholder="e.g., Weather: rainy, Stress: low, Activity: gym"></textarea>
+                    </div>
+
                     <!-- Reminder Option -->
                     <div class="form-group">
-                        <label for="reminder">Set Daily Reminder:</label>
+                        <label for="reminder-time">Set Daily Reminder:</label>
                         <input type="time" id="reminder-time" name="reminder-time">
                     </div>
 
@@ -119,7 +140,7 @@
             <section id="profile">
                 <h2>Profile</h2>
                 <div class="social-links">
-                    <a href="https://X.com" target="_blank">Follow us on X (formerly Twitter)</a>
+                    <a href="https://twitter.com" target="_blank">Follow us on X (formerly Twitter)</a>
                 </div>
             </section>
         </main>
